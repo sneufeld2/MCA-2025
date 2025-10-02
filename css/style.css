@@ -6,3 +6,7 @@
 tei-teiHeader {
   display: none;
 }
+
+.indented{
+    text-indent: 40px;
+}
