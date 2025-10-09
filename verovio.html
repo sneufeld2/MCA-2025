@@ -3,7 +3,7 @@
     <!-- Version 1.0 -->
 <head>
     <meta charset="utf-8">
-    <title>My Piece in Verovio</title>
+    <title> Week 3 (My Piece in Verovio)</title>
     <style>
     html, body {
         width: 100%;
@@ -24,9 +24,25 @@
     </style>
 </head>
 <body>
+    <p>
+      <a href="https://sneufeld2.github.io/MCA-2025/">Back to Portfolio</a>
+    </p>
     <div class="box">
     <div class="header"><h1>Week 3</h1>
-        <p>[Insert your response to task 2 here.]</p>
+        <p>There are several similarities and differences I have noticed between musicXML and the MEI files. First, MEI files are much more compact and concise. For example, measure 1 takes
+        up 80 measures in musicXML and only 18 in MEI. This is because in musicXML, each component of the measure and notes, such as pitch, duration, octove, and stem direction, are separate
+        elements on different lines (for example, "<octave>2</octave>"). In MEI, they are simply attributes on the same line as the note they are describing (oct="3"). This makes it much more concise and allows it to take up less storage
+        space, but it can also limit comprehension since it requires deeper contextual analysis.</p>
+        <p> Second, musicXML files are much more descriptive in terms of format. For each note, it has "default-x" and "default-y" values, which fix the position of the note on the page, and the
+        measure sizes are also set. In MEI, there is no such data that fixes the placement of notes. Consequently, changing the window size on the website changes the visual format of the notes,
+        which can allow for more versatility but less control and difficult readability when the notes are too close together or too far apart.</p>
+        <p> Lastly, the notes are described differently in each format. In musicXML, note durations are encoded by time they take up. For example, a quarter note has duration 2 and element type
+        is quarter. The same note in MEI would have a duration of 4 (quarter note) and no attribute signifying the type of note. A half note has duration 4 in musicXML and 2 in MEI, and an eighth note 
+        has duration 1 in musicXML and 8 in MEI. This means that they are inverse each other, so higher duration values in musicXML correspond to lower duration values in MEI. Each can be more
+        intuitive than the other depending on the user, so you just need to make sure to understand what the values mean in each format.</p>
+        <p> References: https://mei-friend.mdw.ac.at/
+        <br> https://www.w3.org/2021/06/musicxml40/
+        <br> https://music-encoding.org/guidelines/v4/content/</p>
     </div>
     <div id="app">Verovio is loading...</div>
     <script type="module">
