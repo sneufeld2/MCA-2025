@@ -8,3 +8,4 @@ Week 1:
 # Weekly Assignments
 - [Week 2](tasks/week2.html)
 - [Week 3](verovio.html)
+- [Week 5](tasks/week5.html)
