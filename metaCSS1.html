@@ -17,7 +17,7 @@
          const app = new Verovio.App(document.getElementById("app"), {});
 
     // Load a file (MEI or MusicXML)
-    fetch("data/example.mei")
+    fetch("data/Valse3.mei")
         .then(function(response) {
             return response.text();
         })
@@ -38,7 +38,7 @@
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("data/example.mei", function(data) {
+    CETEI4MEI.getHTML5("data/Valse3.mei", function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -52,7 +52,7 @@
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("data/example.mei").then(function( response ) {
+    fetch("data/Valse3.mei").then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
