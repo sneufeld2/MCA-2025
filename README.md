@@ -10,4 +10,4 @@ Week 1:
 - [Week 3](verovio.html)
 - [Week 4](tasks/week4.html)
 - [Week 5](tasks/week5.html)
-- [Week 7](tasks/week7.html)
+- [Week 7](metaCSS2.html)
