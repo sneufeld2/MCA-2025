@@ -1822,9 +1822,9 @@ mei-filedesc > mei-titlestmt > mei-respstmt {
   margin-top: 1em;
 }
 
-mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="composer"]::before {
+mei-worklist > mei-work> mei-composer > mei-persname[role="composer"]::before {
   font-weight: bold;
-  content: "Composer: ";
+  content: '\a'"Composer: ";
   white-space: pre;
   margin-top: 2em;
 }
