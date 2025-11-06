@@ -1835,6 +1835,12 @@ mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::befor
   white-space: pre;
 }
 
+mei-filedesc > mei-pubstmt> mei-publisher::before {
+  font-weight: bold;
+  content: '\a'"Published by: ";
+  white-space: pre;
+}
+
 mei-filedesc > mei-pubstmt > mei-respstmt {
   display: none;
 }
@@ -1843,9 +1849,14 @@ mei-pubstmt > mei-address {
   display: none;
 }
 
-mei-filedesc > mei-pubstmt > mei-date::before {
+mei-filedesc > mei-pubstmt > mei-date[type="encoding-date]::before {
   font-weight: bold;
-  content: "Date encoded: "
+  content: '\a'"Date encoded: "
+}
+
+mei-filedesc > mei-pubstmt > mei-date[type="publishing-date"]::before {
+  font-weight: bold;
+  content: '\a'"Date published: "
 }
 
 mei-filedesc > mei-pubstmt > mei-date::after {
@@ -1938,6 +1949,8 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
   content: '\a''\a';
   white-space: pre;
 }
+
+mei-worklist > mei-work  > mei-notesstmt {}
 
 mei-encodingdesc {
   display: none;
