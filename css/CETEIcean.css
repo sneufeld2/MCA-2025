@@ -1962,7 +1962,35 @@ mei-filedesc > mei-sourcedesc > mei-source > mei-pubstmt::after {
   white-space: pre;
 }
 
-mei-worklist > mei-work  > mei-notesstmt {}
+mei-worklist > mei-work > mei-identifier::before {
+  font-weight: bold;
+  content: "\a""Identifier: ";
+  white-space: pre;
+}
+
+mei-worklist > mei-work > mei-title::before {
+  font-weight: bold;
+  content: "\a""Title: ";
+  white-space: pre;
+}
+
+mei-worklist > mei-work > mei-key::before {
+  font-weight: bold;
+  content: "\a""Key: ";
+  white-space: pre;
+}
+
+mei-worklist > mei-work > mei-perfmedium > mei-perfreslist > mei-perfres::before {
+  font-weight: bold;
+  content: "\a""Instrumentation: ";
+  white-space: pre;
+}
+
+annot {
+  display: block;
+  margin-bottom: 0.5em;
+}
+mei-worklist > mei-work > mei-notesstmt {}
 
 mei-encodingdesc {
   display: none;
