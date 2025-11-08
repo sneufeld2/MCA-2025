@@ -1860,12 +1860,14 @@ mei-pubstmt > mei-address {
 }
 
 mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
+  display: block;
   font-weight: bold;
   content: "\a""Date encoded: "
   white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt > mei-date[type="publishing-date"]::before {
+  display: block;
   font-weight: bold;
   content: "\a""Date published: "
   white-space: pre;
@@ -1986,11 +1988,15 @@ mei-worklist > mei-work > mei-perfmedium > mei-perfreslist > mei-perfres::before
   white-space: pre;
 }
 
-annot {
+mei-worklist > mei-work > mei-perfmedium > mei-perfreslist > mei-perfres::after {
+  content: '\a';
+  white-space: pre;
+}
+
+mei-worklist > mei-work > mei-notesstmt {
   display: block;
   margin-bottom: 0.5em;
 }
-mei-worklist > mei-work > mei-notesstmt {}
 
 mei-encodingdesc {
   display: none;
