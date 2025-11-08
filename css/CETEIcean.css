@@ -1824,20 +1824,20 @@ mei-filedesc > mei-titlestmt > mei-title {
 
 mei-worklist > mei-work> mei-composer > mei-persname[role="composer"]::before {
   font-weight: bold;
-  content: "\aComposer: ";
+  content: "\a""Composer: ";
   white-space: pre;
   margin-top: 2em;
 }
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::before {
   font-weight: bold;
-  content: "\aEncoded by: ";
+  content: "\a""Encoded by: ";
   white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt> mei-publisher::before {
   font-weight: bold;
-  content: "\aPublished by: ";
+  content: "\a""Published by: ";
   white-space: pre;
 }
 
@@ -1851,13 +1851,13 @@ mei-pubstmt > mei-address {
 
 mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
   font-weight: bold;
-  content: "\aDate encoded: "
+  content: "\a""Date encoded: "
   white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt > mei-date[type="publishing-date"]::before {
   font-weight: bold;
-  content: "\aDate published: "
+  content: "\a""Date published: "
   white-space: pre;
 }
 
