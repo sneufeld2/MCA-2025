@@ -1849,6 +1849,16 @@ mei-pubstmt > mei-address {
   display: none;
 }
 
+#encoding-date::before {
+  content: "Date encoded: ";
+  font-weight: bold;
+}
+
+#publishing-date::before {
+  content: "Date published: ";
+  font-style: italic;
+}
+
 mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
   font-weight: bold;
   content: "\a""Date encoded: "
