@@ -1817,27 +1817,27 @@ mei-filedesc > mei-titlestmt > mei-title {
   font-size: 24pt;
 }
 
-mei-filedesc > mei-titlestmt > mei-respstmt {
+/* mei-filedesc > mei-titlestmt > mei-respstmt {
   display: block;
   margin-top: 1em;
-}
+} */
 
 mei-worklist > mei-work> mei-composer > mei-persname[role="composer"]::before {
   font-weight: bold;
-  content: '\a'"Composer: ";
+  content: "\aComposer: ";
   white-space: pre;
   margin-top: 2em;
 }
 
 mei-filedesc > mei-titlestmt> mei-respstmt > mei-persname[role="encoder"]::before {
   font-weight: bold;
-  content: '\a'"Encoded by: ";
+  content: "\aEncoded by: ";
   white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt> mei-publisher::before {
   font-weight: bold;
-  content: '\a'"Published by: ";
+  content: "\aPublished by: ";
   white-space: pre;
 }
 
@@ -1849,14 +1849,16 @@ mei-pubstmt > mei-address {
   display: none;
 }
 
-mei-filedesc > mei-pubstmt > mei-date[type="encoding-date]::before {
+mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
   font-weight: bold;
-  content: '\a'"Date encoded: "
+  content: "\aDate encoded: "
+  white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt > mei-date[type="publishing-date"]::before {
   font-weight: bold;
-  content: '\a'"Date published: "
+  content: "\aDate published: "
+  white-space: pre;
 }
 
 mei-filedesc > mei-pubstmt > mei-date::after {
