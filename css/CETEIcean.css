@@ -1859,7 +1859,7 @@ mei-pubstmt > mei-address {
   font-style: italic;
 }
 
-mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
+/* mei-filedesc > mei-pubstmt > mei-date[type="encoding-date"]::before {
   display: block;
   font-weight: bold;
   content: "\a""Date encoded: "
@@ -1871,7 +1871,26 @@ mei-filedesc > mei-pubstmt > mei-date[type="publishing-date"]::before {
   font-weight: bold;
   content: "\a""Date published: "
   white-space: pre;
+} */
+
+date[type="encoding-date"] {
+  display: block;
 }
+
+date[type="encoding-date"]::before {
+  content: "Encoding date: ";
+  font-weight: bold;
+}
+
+date[type="publishing-date"] {
+  display: block;
+}
+
+date[type="publishing-date"]::before {
+  content: "Publishing date: ";
+  font-weight: bold;
+}
+
 
 mei-filedesc > mei-pubstmt > mei-date::after {
   content: '\a \a';
