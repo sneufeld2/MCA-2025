@@ -12,3 +12,4 @@ Week 1:
 - [Week 5](tasks/week5.html)
 - [Week 7](metaCSS2.html)
 - [Week 8](tasks/week8.html)
+- [Week 9](tasks/week9.html)
