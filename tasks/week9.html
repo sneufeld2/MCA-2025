@@ -10,13 +10,10 @@
     <h1>Week 9</h1>
     <h2>Three Classical Audio Tracks - Extract Features</h2>
     <p> Track 1: Prelude No. 16, BWV 861 - Bach</p>
-    <p> CSV </p>
     <img src="../data/week9files/preludeall.png" width=60%>
     <p> Track 2: Sonata No. 7 in D Major, Op. 10, No. 3 - I. Presto - Beethoven</p>
-    <p> CSV </p>
     <img src="../data/week9files/sonataall.png" width=60%>
     <p> Track 3: Symphony No. 1 in D Major, D. 82: III. Menuetto Allegretto - Schubert</p>
-    <p> CSV </p>
     <img src="../data/week9files/menuettoall.png" width=60%">
     <h2>Histograms</h2>
     <h3>Prelude No. 16, BWV 861 - Bach</h3>
@@ -58,5 +55,12 @@
           <td><img src="../data/week9files/menuetto_chrom.png" width="380"></td>
       </tr>
     </table>
+  <h2>Analysis</h2>
+    <p>Since these are all piano pieces, the MFCC graphs between the songs are very similar, with only a few minor differences. For the spectrogram histograms, they are also similar, as expected,
+    with the Symphony having consistently lower values. The main graph type I'd like to look deeper into is the chromogram. By looking at the x-axes, you can take note of which notes
+    appear the most often in these songs: C, D, and Eb in the Prelude; D, F#, and A in the Sonata; and Bb, F, Eb, and C for the Symphony. The first two match with their keys, but 
+    the last graph is interesting, because the song is in D major, as the title suggests. This may suggest modulation. The main focus, however, is on how these graphs compare
+    to each other; there is the most volume on the Prelude histogram and the least on the Symphony one. This can help determine the variety of notes present in the song. The Sonata
+    histogram went up to 0.05, which is the highest that any of the graphs go on the x axis, suggesting a strong presence of the particular pitch, which in this case is D.</p>
   </body>
 </html>
