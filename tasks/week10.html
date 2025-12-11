@@ -1,0 +1,46 @@
+<html>
+<!--Version 1.0 -->
+  <head>
+    <title>Week 10</title>
+  </head>
+  <body>
+    <p>
+      <a href="https://sneufeld2.github.io/MCA-2025/">Back to Portfolio</a>
+    </p>
+    <h1>Week 10</h1>
+    <h2>Three Classical Audio Tracks - Similarity Matrices</h2>
+    <p>These graphs use 10 audio tracks, the first 7 provided by the instructor. Tracks 0-3 are classical and 4-6 are rock. The next three tracks are the same as the past two weeks; track 7 is
+      the Prelude, track 8 is the Sonata, and track 9 is the Symphony. As expected, these three groupings are clear in the graphs. Since my tracks are also classical/piano tracks, they also
+      show to be very similar to the first four tracks.
+    <table border="0">
+      <tr>
+        <th>A's and C's</th>
+        <th>All Notes</th>
+      </tr>
+      <tr>
+          <td><img src="../data/matrix.png" width="380"></td>
+          <td><img src="../data/12dmatrix.png" width="380"></td>
+      </tr>
+    </table>
+    <h3>Other Similarity Graphs</h3>
+    <table border="0">
+      <tr>
+        <th>Mean Feature Vector Representation</th>
+        <th>2D A vs. C Occurrence</th>
+      </tr>
+      <tr>
+          <td><img src="../data/line_graphs.png" width="380"></td>
+          <td><img src="../data/similarity.png" width="380"></td>
+      </tr>
+    </table>
+  <h2>Transcription</h2>
+    <p>more images here</p>
+  <h2>Analysis</h2>
+    <p>Since these are all piano pieces, the MFCC graphs between the songs are very similar, with only a few minor differences. For the spectrogram histograms, they are also similar, as expected,
+    with the Symphony having consistently lower values. The main graph type I'd like to look deeper into is the chromogram. By looking at the x-axes, you can take note of which notes
+    appear the most often in these songs: C, D, and Eb in the Prelude; D, F#, and A in the Sonata; and Bb, F, Eb, and C for the Symphony. The first two match with their keys, but 
+    the last graph is interesting, because the song is in D major, as the title suggests. This may suggest modulation. The main focus, however, is on how these graphs compare
+    to each other; there is the most volume on the Prelude histogram and the least on the Symphony one. This can help determine the variety of notes present in the song. The Sonata
+    histogram went up to 0.05, which is the highest that any of the graphs go on the x axis, suggesting a strong presence of the particular pitch, which in this case is D.</p>
+  </body>
+</html>
